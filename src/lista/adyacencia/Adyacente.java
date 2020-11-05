@@ -13,17 +13,11 @@ public class Adyacente {
         destino = codAdy;   peso = pesoArista;
     }
 
-    /** Devuelve el vertice adyacente */
-    public int getDestino() { return destino; }
-
-    /** Devuelve el peso del arco al vertice adyacente */
-    public double getPeso() { return peso; }
-
     /**Devuelve un String que representa a un vertice adyacente a otro
      * y al peso de la arista que los une.
      * @return  String  que representa a un adyacente
      */
     public String toString() {
-        return destino + "(" + peso + ") ";
+        return destino + "(" + (int) peso + ") ";
     }
 }
